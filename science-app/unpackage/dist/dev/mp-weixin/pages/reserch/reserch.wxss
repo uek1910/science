@@ -1,0 +1,68 @@
+
+.header{
+	width: 100%;
+	height: 143rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+     line-height: 143rpx;
+	 text-align: center;
+	 font-size: 26rpx;
+	 color: #a3a3a3;
+	 font-weight: 600;
+}
+.header_item{
+	width: 25%;
+	height: 143rpx;
+	-webkit-box-pack:justify;
+	-webkit-justify-content:space-between;
+	        justify-content:space-between;
+	position: relative;
+}
+.active::before{
+	width: 34rpx;
+	height: 4rpx;
+	content: "";
+	background-color: #ffab3e;
+	position: absolute;
+	left: 80rpx;
+     top: 100rpx;
+}
+/* 列表 */
+.reserch_list{
+	width: 664rpx;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.reserch_listItem{
+	width: 664rpx;
+	height: 124rpx;
+	margin-bottom: 79rpx;
+	overflow: hidden;
+}
+.lists_img{
+	width: 193rpx;
+	height: 124rpx;
+	float: left;
+	display: block;
+}
+.title{
+	font-size: 28rpx;
+	margin-left: 227rpx;
+	line-height: 56rpx;
+}
+.content{
+	width: 439rpx;
+	height: 68rpx;
+	color:#a3a3a3;
+	font-size: 24rpx;
+	margin-left: 227rpx;
+	line-height: 38rpx;
+	text-overflow:ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+
