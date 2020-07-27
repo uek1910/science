@@ -1,10 +1,15 @@
 {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
 	"description": "项目配置文件。",
 	"packOptions": {
 		"ignore": []
 	},
 	"setting": {
 		"urlCheck": false,
+<<<<<<< HEAD
 		"es6": true,
 		"enhance": false,
 		"postcss": true,
@@ -21,14 +26,39 @@
 		"checkSiteMap": true,
 		"uploadWithSourceMap": true,
 		"compileHotReLoad": false,
+=======
+		"scopeDataCheck": false,
+		"coverView": true,
+		"es6": true,
+		"postcss": true,
+		"compileHotReLoad": false,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"autoAudits": false,
+		"newFeature": false,
+		"uglifyFileName": false,
+		"uploadWithSourceMap": true,
+		"useIsolateContext": true,
+		"nodeModules": false,
+		"enhance": false,
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"showShadowRootInWxmlPanel": true,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
 		"babelSetting": {
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
+<<<<<<< HEAD
 		},
 		"useIsolateContext": true,
 		"useCompilerModule": false,
 		"userConfirmedUseCompilerModuleSwitch": false
+=======
+		}
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
 	},
 	"compileType": "miniprogram",
 	"libVersion": "",
@@ -45,14 +75,18 @@
 			"current": -1,
 			"list": []
 		},
+<<<<<<< HEAD
 		"plugin": {
 			"current": -1,
 			"list": []
 		},
+=======
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
 		"game": {
 			"current": -1,
 			"list": []
 		},
+<<<<<<< HEAD
 		"gamePlugin": {
 			"current": -1,
 			"list": []
@@ -69,4 +103,42 @@
 			]
 		}
 	}
+=======
+		"miniprogram": {
+			"current": -1,
+			"list": []
+		}
+	}
+=======
+  "description": "项目配置文件。",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false
+  },
+  "compileType": "miniprogram",
+  "libVersion": "",
+  "appid": "touristappid",
+  "projectname": "science-app",
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "current": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": -1,
+      "list": []
+    }
+  }
+>>>>>>> b0aaf7ca1d28b716988fca045f35e80339fc20f1
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
 }

@@ -6,6 +6,10 @@
 				"navigationBarTitleText": "政策"
 			}
 		}
+		,{
+		    "path" : "pages/policy/support",
+		    "style" : {}
+		}
 	    ,{
             "path" : "pages/reserch/reserch",
             "style" : {}
@@ -28,6 +32,10 @@
         }
         ,{
             "path" : "pages/compony/result",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/reserch/reserch_details",
             "style" : {}
         }
     ],
