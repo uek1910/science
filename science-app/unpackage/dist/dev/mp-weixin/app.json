@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/policy/policy",
+    "pages/policy/support",
     "pages/reserch/reserch",
     "pages/activity/activity",
     "pages/login/login",

@@ -15,6 +15,12 @@
 					<p class="technical">山西省科学技术厅</p>
 					<p class="time">2018-10-24</p>
 			</view>
+			<view class="project">
+				<h1 class="project_title">知识产权情况</h1>
+				<p class="project_content">为贯彻落实省政府《山西省深化省级财政科技计划专项基金等管理改革方案》，规范项目管理专业机构，我们制定了《山西省省级财政科技计划》</p>
+					<p class="technical">山西省科学技术厅</p>
+					<p class="time">2018-10-24</p>
+			</view>
 		</view>
 	</view>
 </template>
@@ -83,5 +89,6 @@
 	.time{
 		font-size: 26rpx;
 		text-align: right;
+		color: #cdcdcf;
 	}
 </style>

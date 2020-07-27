@@ -56,5 +56,6 @@ line-height: 100rpx;
 .time{
 	font-size: 26rpx;
 	text-align: right;
+	color: #cdcdcf;
 }
 

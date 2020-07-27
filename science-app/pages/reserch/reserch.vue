@@ -9,27 +9,27 @@
 		<!-- 列表 -->
 		<view class="reserch_list">
 			<view class="reserch_listItem">
-				<image src="../../static/logo.png" class="lists_img"></image>
+				<image src="../../static/reserch/VCG41N866011852.png" class="lists_img"></image>
 				<h2 class="title">山西省科学技术厅关于印发</h2>
 				<p class="content">专项基金等项目管理专业机构管理暂行规定的通知</p>
 			</view>
 			<view class="reserch_listItem">
-				<image src="../../static/logo.png" class="lists_img"></image>
+				<image src="../../static/reserch/VCG41N866011852.png" class="lists_img"></image>
 				<h2 class="title">山西省科学技术厅关于印发</h2>
 				<p class="content">专项基金等项目管理专业机构管理暂行规定的通知</p>
 			</view>
 			<view class="reserch_listItem">
-				<image src="../../static/logo.png" class="lists_img"></image>
+				<image src="../../static/reserch/VCG41N866011852.png" class="lists_img"></image>
 				<h2 class="title">山西省科学技术厅关于印发</h2>
 				<p class="content">专项基金等项目管理专业机构管理暂行规定的通知</p>
 			</view>
 			<view class="reserch_listItem">
-				<image src="../../static/logo.png" class="lists_img"></image>
+				<image src="../../static/reserch/VCG41N866011852.png" class="lists_img"></image>
 				<h2 class="title">山西省科学技术厅关于印发</h2>
 				<p class="content">专项基金等项目管理专业机构管理暂行规定的通知</p>
 			</view>
 			<view class="reserch_listItem">
-				<image src="../../static/logo.png" class="lists_img"></image>
+				<image src="../../static/reserch/VCG41N866011852.png" class="lists_img"></image>
 				<h2 class="title">山西省科学技术厅关于印发</h2>
 				<p class="content">专项基金等项目管理专业机构管理暂行规定的通知</p>
 			</view>
