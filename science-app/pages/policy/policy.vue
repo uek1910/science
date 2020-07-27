@@ -1,55 +1,55 @@
 <template>
 	<view class="policy_body">
+		<!-- 导航开始 -->
 		<view class="policy_nav">
 			<view class="nav_title active">政策法规</view>
 			<view class="nav_title">持续类型</view>
 			<view class="nav_title">心理指导</view>
 		</view>
+		<!-- 导航结束-->
+		<!-- 列表开始 -->
 		<view class="policy_content">
 			<view class="content">
-				<image class="content_img" src="../../static/logo.png"></image>
+				<image class="content_img" src="../../static/policy1.png"></image>
 				<view class="con">
 					<p>山西省科学技术厅关于印发《山西省省级<br>财政科技计划（专项,基金等）项目管理专<br>业机构管理暂行规定》的通知</p>
 				</view>
 			</view>
 			<view class="content">
-				<image class="content_img" src="../../static/logo.png"></image>
+				<image class="content_img" src="../../static/policy2.png"></image>
 				<view class="con">
 					<p>山西省科学技术厅关于印发《山西省省级<br>财政科技计划（专项,基金等）项目管理专<br>业机构管理暂行规定》的通知</p>
 				</view>
 			</view>
 			<view class="content">
-				<image class="content_img" src="../../static/logo.png"></image>
+				<image class="content_img" src="../../static/policy3.png"></image>
 				<view class="con">
 					<p>山西省科学技术厅关于印发《山西省省级<br>财政科技计划（专项,基金等）项目管理专<br>业机构管理暂行规定》的通知</p>
 				</view>
 			</view>
 			<view class="content">
-				<image class="content_img" src="../../static/logo.png"></image>
+				<image class="content_img" src="../../static/policy4.png"></image>
 				<view class="con">
 					<p>山西省科学技术厅关于印发《山西省省级<br>财政科技计划（专项,基金等）项目管理专<br>业机构管理暂行规定》的通知</p>
 				</view>
 			</view>
 			<view class="content">
-				<image class="content_img" src="../../static/logo.png"></image>
+				<image class="content_img" src="../../static/policy1.png"></image>
 				<view class="con">
 					<p>山西省科学技术厅关于印发《山西省省级<br>财政科技计划（专项,基金等）项目管理专<br>业机构管理暂行规定》的通知</p>
 				</view>
 			</view>
 		</view>
-		
-		
+		<!-- 列表结束 -->
 	</view>
 </template>
 <script>
 	export default {
 		data() {
 			return {
-				
 			}
 		},
 		methods: {
-			
 		}
 	}
 </script>
@@ -57,6 +57,7 @@
 body{
 	background: #fcfcfc;
 }
+/* 导航开始 */
 .policy_body{
 	background: #fcfcfc;
 	width: 703rpx;
@@ -65,9 +66,6 @@ body{
 	margin: 0 auto;
 }
 .policy_nav{
-	/* width: 703rpx;
-	height: 177rpx; */
-	/* padding:  0 24rpx; */
 	margin: 0 auto;
 	font-size: #fff;
 	background: #fcfcfc;
@@ -84,6 +82,8 @@ body{
 	background: #ffab3e;
 	color: #2c304c;
 }
+/* 导航结束 */
+/* 列表结束 */
 .policy_content{
 	width: 703rpx;
 	height: 1020rpx;
@@ -96,7 +96,7 @@ body{
 	background: #fff;
 	margin-bottom: 26rpx;
 	float: left;
-	box-shadow: 0rpx 0rpx 10rpx #000;
+	box-shadow: 0rpx 1rpx 16rpx 0rpx rgba(229, 229, 229, 0.75);
 }
 .content_img{
 	width:193rpx;
@@ -114,10 +114,5 @@ body{
 	font-size: 22rpx;
 	color: #7f7f7f;
 }
-
-
-
-
-
-
+/* 列表结束 */
 </style>

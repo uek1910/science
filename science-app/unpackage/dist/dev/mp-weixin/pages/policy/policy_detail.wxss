@@ -1,0 +1,52 @@
+
+.policy_detail{
+	width: 620rpx;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.policy_detail_title{
+	display: block;
+	width: 100%;
+	height: 90rpx;
+	padding-top: 64rpx;
+	font-size: 42rpx;
+	color: #4a4c57;
+	font-weight: 900;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space:nowrap;
+}
+.policy_detail_intro{
+	display: block;
+	height: 55rpx;
+	font-size: 26rpx;
+	color: #a5a7af;
+	font-weight: 900;
+}
+.policy_detail_text{
+	display: block;
+	color: #565970;
+	font-size: 22rpx;
+	line-height: 34rpx;
+	font-weight: 900;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:4;
+	letter-spacing:3rpx;
+}
+.policy_detail_text2{
+	margin-top: 35rpx;
+}
+.policy_detail_img{
+	margin-top: 45rpx;
+	width: 506rpx;
+	height: 270rpx;
+	border-radius: 3px;
+}
+.policy_detail_text3{
+	margin-top: 45rpx;
+}
+

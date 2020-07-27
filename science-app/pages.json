@@ -34,6 +34,10 @@
             "path" : "pages/compony/result",
             "style" : {}
         }
+		,{
+		    "path" : "pages/policy/guidance",
+		    "style" : {}
+		}
         ,{
             "path" : "pages/reserch/reserch_details",
             "style" : {}
@@ -44,11 +48,66 @@
             "path" : "pages/reserch/project",
             "style" : {}
         }
+        ,{
+            "path" : "pages/tabs/tabs",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/policy/policy_detail",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/compony/needs_list",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/compony/needs_detail",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/compony/apply_result",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/compony/apply_detail",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7c7c7c",
+		"selectedColor": "#2c304c",
+		"borderStyle": "black",
+		"backgroundColor": "#f8f8f8",
+		"list": [{
+				"pagePath": "pages/policy/policy",
+				"iconPath": "static/tab-policy.png",
+				"selectedIconPath": "static/tab-policy-current.png",
+				"text": "政策"
+			},
+			{
+				"pagePath": "pages/compony/compony",
+				"iconPath": "static/tab-compony.png",
+				"selectedIconPath": "static/tab-compony-current.png",
+				"text": "企业"
+			},
+			{
+				"pagePath": "pages/reserch/reserch",
+				"iconPath": "static/tab-reserch.png",
+				"selectedIconPath": "static/tab-reserch-current.png",
+				"text": "科研"
+			},
+			{
+				"pagePath": "pages/activity/activity",
+				"iconPath": "static/tab-activity.png",
+				"selectedIconPath": "static/tab-activity-current.png",
+				"text": "活动"
+			}
+		]
 	}
 }

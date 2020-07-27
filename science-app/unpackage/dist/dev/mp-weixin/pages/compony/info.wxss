@@ -1,0 +1,169 @@
+
+.content{
+	width:100% ;
+	height:100% ;
+}
+/* 所有人开始 */
+.all{
+	width:100% ;
+	height:auto ;
+	overflow: hidden;
+	display:none ;
+}
+.status{
+	width:701rpx ;
+	height:159rpx ;
+	margin:37rpx auto ;
+}
+.status_public{
+	width:333rpx ;
+	height:159rpx ;
+	border-radius:8rpx ;
+}
+.left{
+	float: left;
+	background-color:#20c8bb ;
+}
+.right{
+	float: right;
+	background-color:#fdab3e ;
+}
+.status_img{
+	width:55rpx ;
+	height:55rpx ;
+	float: left;
+	margin:22rpx 250rpx 25rpx 24rpx ;
+}
+.status_text1{
+	width:189rpx ;
+	height:67rpx ;
+	float: left;
+	font-size:28rpx ;
+	color:#fff;
+	margin-left:19rpx ;
+}
+.status_text2{
+	width:125rpx ;
+	height:67rpx ;
+	float: left;
+	font-size:28rpx ;
+	color:#fff;
+}
+.status_text2 ._span{
+	font-weight:700 ;
+	padding-right:10rpx ;
+}
+.personnel{
+	width:701rpx ;
+	height:auto ;
+	margin:24rpx auto ;
+	overflow: hidden;
+}
+.personnel_list{
+	width:100% ;
+	height:150rpx ;
+	border-bottom:2px solid #f7f7f7;
+}
+.personnel_list:last-child{
+	border:none ;
+}
+.personnel_img{
+	width:116rpx ;
+	height:116rpx ;
+	border-radius:50% ;
+	margin-top:18rpx ;
+	margin-right:29rpx ;
+	float: left;
+}
+.personnel_text1{
+	float: left;
+	margin-top:50rpx ;
+	font-size:28rpx ;
+	width:455rpx ;
+	height:40rpx ;
+	color:#4a4c57;
+}
+.personnel_text2{
+	float: right;
+	width: 96rpx;
+	height: 40rpx;
+	background-color:#e8f9f8 ;
+	font-size:20rpx ;
+	text-align: center;
+	line-height:40rpx ;
+	color:#52d4ca;
+	margin-top:50rpx ;
+	border-radius:20rpx ;
+}
+.personnel_text3{
+	float: left;
+	font-size:23rpx ;
+	color:#8e8f99;
+}
+/* 所有人结束 */
+/* 营业执照开始 */
+.license{
+	width:100% ;
+	height:auto;
+	overflow: hidden;
+	display: none;
+}
+.business{
+	width:602rpx ;
+	height:875rpx ;
+	margin:83rpx auto ;
+}
+.business image{
+	width:100% ;
+	height:100% ;
+}
+/* 营业执照结束 */
+/* 自有技术成果开始 */
+.start{
+	width:100% ;
+	height:auto;
+	overflow: hidden;
+}
+.results{
+	width:660rpx ;
+	height:auto ;
+	overflow: hidden;
+	margin:19rpx auto ;
+}
+.results_list{
+	width:100% ;
+	height:167rpx ;
+	border-bottom:2px solid #f7f7f7;
+}
+.results_list:last-child{
+	border:none ;
+}
+.results_img1{
+	width:109rpx ;
+	height:109rpx ;
+	float: left;
+	margin:29rpx 29rpx 29rpx 0rpx ;
+}
+.results_text1{
+	width:516rpx ;
+	height:46rpx ;
+	float: left;
+	margin-top:48rpx ;
+	font-size:27rpx ;
+	color:#4a4c57;
+}
+.results_text2{
+	width:516rpx ;
+	height:46rpx ;
+	float: left;
+	font-size:27rpx ;
+	color:#8e8f99;
+}
+.results_img2{
+	width:9rpx ;
+	height:13rpx ;
+	float: right;
+	margin-top:54rpx ;
+}
+/* 自有技术成果结束 */
+

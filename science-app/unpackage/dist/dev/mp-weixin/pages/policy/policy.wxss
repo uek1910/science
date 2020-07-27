@@ -1,0 +1,63 @@
+
+page{
+	background: #fcfcfc;
+}
+/* 导航开始 */
+.policy_body{
+	background: #fcfcfc;
+	width: 703rpx;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.policy_nav{
+	margin: 0 auto;
+	font-size: #fff;
+	background: #fcfcfc;
+}
+.nav_title{
+	float: left;
+	font-size: 24rpx;
+	padding:64rpx 68rpx;
+	color: #9597a5;
+}
+.active ::before{
+	width: 34rpx;
+	height: 4rpx;
+	background: #ffab3e;
+	color: #2c304c;
+}
+/* 导航结束 */
+/* 列表结束 */
+.policy_content{
+	width: 703rpx;
+	height: 1020rpx;
+	border-radius:2rpx;
+	margin: 0 auto;
+}
+.content{
+	width: 700rpx;
+	height: 179rpx;
+	background: #fff;
+	margin-bottom: 26rpx;
+	float: left;
+	box-shadow: 0rpx 1rpx 16rpx 0rpx rgba(229, 229, 229, 0.75);
+}
+.content_img{
+	width:193rpx;
+	height:126rpx;
+	float: left;
+	margin: 26rpx 9rpx;
+}
+.con{
+	width: 487rpx;
+	height: 177rpx;
+	float: right;
+	margin: 26rpx 0rpx;
+}
+.con{
+	font-size: 22rpx;
+	color: #7f7f7f;
+}
+/* 列表结束 */
+
