@@ -97,6 +97,19 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
+  if (!_vm._isMounted) {
+    _vm.e0 = function($event) {
+      _vm.act = 0
+    }
+
+    _vm.e1 = function($event) {
+      _vm.act = 1
+    }
+
+    _vm.e2 = function($event) {
+      _vm.act = 2
+    }
+  }
 }
 var recyclableRender = false
 var staticRenderFns = []
@@ -169,11 +182,65 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
-    return {};
-
+    return {
+      act: 0 };
 
   },
   methods: {} };exports.default = _default;

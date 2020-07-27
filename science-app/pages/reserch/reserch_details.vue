@@ -7,6 +7,7 @@
 				<p class="box_company"><span>合作方式:</span>山西省太原市迎泽区府西街128号</p></p>
 				<p class="box_company"><span>联系方式:</span>153 6839 1683</p>
 			</view>
+			</view>
 			<!-- 项目介绍 -->
 			<view class="project">
 				<h1 class="project_title">项目介绍</h1>
