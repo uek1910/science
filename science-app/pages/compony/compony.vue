@@ -2,17 +2,17 @@
 	<view>
 		<!-- 标题选项卡 -->
 		<view class="tit">
-			<view class="list active" @click="handleTab(index)">企业信息</view>
-			<view class="list">知识产权</view>
-			<view class="list">设计方案</view>
-			<view class="list">需求方案</view>
-			<view class="list">技术需求</view>
-			<view class="list">设备共享</view>
+			<view :class="['list',{'active':index==0}]" @click="index=0">企业信息</view>
+			<view :class="['list',{'active':index==1}]" @click="index=1">知识产权</view>
+			<view :class="['list',{'active':index==2}]" @click="index=2">设计方案</view>
+			<view :class="['list',{'active':index==3}]" @click="index=3">需求方案</view>
+			<view :class="['list',{'active':index==4}]" @click="index=4">技术需求</view>
+			<view :class="['list',{'active':index==5}]" @click="index=5">设备共享</view>
 		</view>
 		<!-- 内容方案 -->
 		<view class="content">
 			<!-- 企业信息 -->
-			<view class="way xinxi">
+			<view :class="['way','xinxi',{'activeWay':index==0}]">
 				<view class="info">
 					<view class="bt">太阳能发电项目需求</view>
 					<view class="jianjie">企业简介</view>
@@ -24,7 +24,7 @@
 				<view class="btn">查看更多</view>
 			</view>
 			<!-- 知识产权 -->
-			<view class="way" style="display: none;">
+			<view :class="['way',{'activeWay':index==1}]">
 				<view class="plan">
 					<view class="left">
 						<view class="line"></view>
@@ -45,7 +45,7 @@
 				</view>
 			</view>
 			<!-- 设计方案 -->
-			<view class="way" style="display: none;">
+			<view :class="['way',{'activeWay':index==2}]">
 				<view class="plan">
 					<view class="left">
 						<image src="@/static/compony/wj.png" mode=""></image>
@@ -76,17 +76,19 @@
 				</view>
 			</view>
 			<!-- 需求方案 -->
-			<view class="way" style="display: none;">
-				<view class="plan">
-					<view class="left">
-						<image src="@/static/compony/wj.png" mode=""></image>
-						<view>需求方案</view>
+			<view :class="['way',{'activeWay':index==3}]">
+				<navigator url="needs_detail">
+					<view class="plan">
+						<view class="left">
+							<image src="@/static/compony/wj.png" mode=""></image>
+							<view>需求方案</view>
+						</view>
+						<view class="right">
+							<view class="ff">付费</view>
+							<image src="@/static/compony/fanhui-2.png" mode=""></image>
+						</view>
 					</view>
-					<view class="right">
-						<view class="ff">付费</view>
-						<image src="@/static/compony/fanhui-2.png" mode=""></image>
-					</view>
-				</view>
+				</navigator>
 				<view class="plan">
 					<view class="left">
 						<image src="@/static/compony/wx1.png" mode=""></image>
@@ -107,16 +109,18 @@
 				</view>
 			</view>
 			<!-- 技术需求 -->
-			<view class="way" style="display: none;">
-				<view class="plan">
-					<view class="left">
-						<image src="@/static/compony/fabu.png" mode=""></image>
-						<view>已发布</view>
+			<view :class="['way',{'activeWay':index==4}]">
+				<navigator url="needs_list">
+					<view class="plan">
+						<view class="left">
+							<image src="@/static/compony/fabu.png" mode=""></image>
+							<view>已发布</view>
+						</view>
+						<view class="right">
+							<image src="@/static/compony/fanhui-2.png" mode=""></image>
+						</view>
 					</view>
-					<view class="right">
-						<image src="@/static/compony/fanhui-2.png" mode=""></image>
-					</view>
-				</view>
+				</navigator>
 				<view class="plan">
 					<view class="left">
 						<image src="@/static/compony/qiye.png" mode=""></image>
@@ -139,16 +143,18 @@
 				</view>
 			</view>
 			<!-- 设备共享 -->
-			<view class="way" style="display: none;">
-				<view class="plan">
-					<view class="left">
-						<image src="@/static/compony/fabu.png" mode=""></image>
-						<view>已发布</view>
+			<view :class="['way',{'activeWay':index==5}]">
+				<navigator url="needs_list">
+					<view class="plan">
+						<view class="left">
+							<image src="@/static/compony/fabu.png" mode=""></image>
+							<view>已发布</view>
+						</view>
+						<view class="right">
+							<image src="@/static/compony/fanhui-2.png" mode=""></image>
+						</view>
 					</view>
-					<view class="right">
-						<image src="@/static/compony/fanhui-2.png" mode=""></image>
-					</view>
-				</view>
+				</navigator>
 				<view class="plan">
 					<view class="left">
 						<image src="@/static/compony/qiye.png" mode=""></image>
@@ -240,6 +246,10 @@
 		width: 100%;
 		height: auto;
 		background: #fcfcfc;
+		display: none;
+	}
+	.activeWay{
+		display: block;
 	}
 	.plan{
 		width: 100%;
