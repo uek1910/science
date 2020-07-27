@@ -20,6 +20,10 @@
 			<view class="content">
 				<h1>研发加计</h1>
 				<image class="content_img" src="../../static/logo.png"></image>
+				<view class="con">
+					<p>山西省科学技术厅关于印发《山西省省级<br>财政科技计划（专项,基金等）项目管理专<br>业机构管理暂行规定》的通知</p>
+				</view>
+			</view>		
 			</view>
 		</view>
 		<!-- 列表结束 -->
