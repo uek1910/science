@@ -6,11 +6,13 @@
 				"navigationBarTitleText": "政策"
 			}
 		}
+		,{
+		    "path" : "pages/policy/support",
+		    "style" : {}
+		}
 	    ,{
             "path" : "pages/reserch/reserch",
-            "style" : {
-				"navigationBarTitleText": "科研"
-			}
+            "style" : {}
         }
         ,{
             "path" : "pages/activity/activity",

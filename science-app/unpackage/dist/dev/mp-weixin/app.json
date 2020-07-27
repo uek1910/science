@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/policy/policy",
+    "pages/policy/support",
+    "pages/reserch/reserch",
+    "pages/activity/activity",
+    "pages/login/login",
+    "pages/compony/compony",
+    "pages/compony/info",
+    "pages/compony/result"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {}
+}
