@@ -37,6 +37,12 @@
         ,{
             "path" : "pages/reserch/reserch_details",
             "style" : {}
+        },{
+            "path" : "pages/reserch/expertInformation",
+            "style" : {}
+        },{
+            "path" : "pages/reserch/project",
+            "style" : {}
         }
     ],
 	"globalStyle": {

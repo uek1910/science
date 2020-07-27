@@ -1,0 +1,84 @@
+
+.infor_box{
+		width: 690rpx;
+		height: 408rpx;
+		margin:0 auto;
+		border-bottom: 1rpx solid #f7f7f7;
+}
+.inforImg{
+		float: left;
+		margin-top: 37rpx;
+		width: 244rpx;
+		height: 303rpx;
+}
+.infor_content{
+		width:370rpx;
+		height: 303rpx;
+		margin-top: 38rpx;
+		float: right;
+}
+.infor_top{
+		width: 370rpx;
+		height: 106rpx;
+}
+.infor_name{
+		float: left;
+		font-size:38rpx;
+		margin-top: 36rpx;
+}
+.expertBtns{
+		width:96rpx;
+		height: 38rpx;
+		float: left;
+		text-align: center;
+		line-height: 38rpx;
+		background-color: #e8f9f8;
+		color: #46d1c6;
+		border-radius: 23rpx;
+		font-size: 22rpx;
+		margin-top: 40rpx;
+		margin-left: 19rpx;
+}
+.address{
+	   width: 370rpx;
+	   height: 65rpx;
+}
+.addressIcon{
+	   width: 22rpx;
+	   height: 22rpx;
+	   float: left;
+	   margin-top: 24rpx;
+}
+.addressName{
+	   float: left;
+	   font-size: 24rpx;
+	   line-height: 65rpx;
+	   margin-left: 10rpx;
+	   text-overflow:ellipsis;
+	   display: -webkit-box;
+	   -webkit-box-orient: vertical;
+	   -webkit-line-clamp: 1;
+	   overflow: hidden;
+}
+.addressName .sheng{
+	   color: #d1d2d4;
+	   padding-left: 10rpx;
+}
+	/* 主要成就 */
+.project{
+   	width: 619rpx;
+   	height: auto;
+   	margin: 0 auto;
+   			margin-top: 43rpx;
+}
+.project_title{
+   	font-size: 28rpx;
+   	line-height: 90rpx;
+   	color: #c7c8cd;
+   	font-weight: 400rpx;
+}
+.project_content{
+   	font-size: 24rpx;
+   	line-height: 40rpx;
+}
+

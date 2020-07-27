@@ -3,32 +3,32 @@
 		<view class="header">
 			<view class="header_item" @click="act=0" :class="{'active':act===0}">科研成果</view>
 			<view class="header_item"  @click="act=1" :class="{'active':act===1}">专家信息</view>
-			<view class="header_item"   @click="act=2" :class="{'active':act===2}">项目人才</view>
-			<view class="header_item">成果视频</view>
+			<view class="header_item" @click="act=2" :class="{'active':act===2}">项目人才</view>
+			<view class="header_item"  @click="act=3" :class="{'active':act===3}">成果视频</view>
 		</view>
 		<!-- 列表 -->
 		<view class="reserch_list" v-show="act===0">
-			<view class="reserch_listItem">
+			<view class="reserch_listItem" @tap="tiao">
 				<image src="../../static/reserch/VCG41N866011852.png" class="lists_img"></image>
 				<h2 class="title">山西省科学技术厅关于印发</h2>
 				<p class="content">专项基金等项目管理专业机构管理暂行规定的通知</p>
 			</view>
-			<view class="reserch_listItem">
+			<view class="reserch_listItem" @tap="tiao">
 				<image src="../../static/reserch/VCG41N866011852.png" class="lists_img"></image>
 				<h2 class="title">山西省科学技术厅关于印发</h2>
 				<p class="content">专项基金等项目管理专业机构管理暂行规定的通知</p>
 			</view>
-			<view class="reserch_listItem">
+			<view class="reserch_listItem" @tap="tiao">
 				<image src="../../static/reserch/VCG41N866011852.png" class="lists_img"></image>
 				<h2 class="title">山西省科学技术厅关于印发</h2>
 				<p class="content">专项基金等项目管理专业机构管理暂行规定的通知</p>
 			</view>
-			<view class="reserch_listItem">
+			<view class="reserch_listItem" @tap="tiao">
 				<image src="../../static/reserch/VCG41N866011852.png" class="lists_img"></image>
 				<h2 class="title">山西省科学技术厅关于印发</h2>
 				<p class="content">专项基金等项目管理专业机构管理暂行规定的通知</p>
 			</view>
-			<view class="reserch_listItem">
+			<view class="reserch_listItem" @tap="tiao">
 				<image src="../../static/reserch/VCG41N866011852.png" class="lists_img"></image>
 				<h2 class="title">山西省科学技术厅关于印发</h2>
 				<p class="content">专项基金等项目管理专业机构管理暂行规定的通知</p>
@@ -36,58 +36,75 @@
 		</view>
 		<!-- 专家信息 -->
 		<view class="expert" v-show="act===1">
+			
 			<view class="expertList">
+				<navigator url="../reserch/expertInformation">
 				<image class="expertImg" src="../../static/reserch/VCG41N866011852.png"></image>
 				<view class="expert_box">
 				<h2 class="expert_name">苏灿</h2>
 				<h4 class="expert_content"><span>简介：</span>高级技术员高级技术员</h4>
 				</view>
 				<view class="expertBtn">研究生</view>
+				
+				</navigator>
 			</view>
 			<view class="expertList">
+				<navigator url="../reserch/expertInformation">
 				<image class="expertImg" src="../../static/reserch/VCG41N866011852.png"></image>
 				<view class="expert_box">
 				<h2 class="expert_name">苏灿</h2>
 				<h4 class="expert_content"><span>简介：</span>高级技术员高级技术员</h4>
 				</view>
 				<view class="expertBtn">研究生</view>
+				</navigator>
 			</view>
 			<view class="expertList">
+				<navigator url="../reserch/expertInformation">
 				<image class="expertImg" src="../../static/reserch/VCG41N866011852.png"></image>
 				<view class="expert_box">
 				<h2 class="expert_name">苏灿</h2>
 				<h4 class="expert_content"><span>简介：</span>高级技术员高级技术员</h4>
 				</view>
 				<view class="expertBtn">研究生</view>
+				</navigator>
 			</view>
 		</view>
 		<!-- 项目人才 -->
 		<view class="expert" v-show="act===2">
 			<view class="expertList">
+				<navigator url="../reserch/project">
 				<image class="expertImg" src="../../static/reserch/VCG41N866011852.png"></image>
 				<view class="expert_box">
 				<h2 class="expert_name">苏灿</h2>
 				<h4 class="expert_content"><span>简介：</span>高级技术员高级技术员</h4>
 				</view>
 				<view class="expertBtn">研究生</view>
+				</navigator>
 			</view>
 			<view class="expertList">
+				<navigator url="../reserch/project">
 				<image class="expertImg" src="../../static/reserch/VCG41N866011852.png"></image>
 				<view class="expert_box">
 				<h2 class="expert_name">苏灿</h2>
 				<h4 class="expert_content"><span>简介：</span>高级技术员高级技术员</h4>
 				</view>
 				<view class="expertBtn">研究生</view>
+				</navigator>
 			</view>
 			<view class="expertList">
+				<navigator url="../reserch/project">
 				<image class="expertImg" src="../../static/reserch/VCG41N866011852.png"></image>
 				<view class="expert_box">
 				<h2 class="expert_name">苏灿</h2>
 				<h4 class="expert_content"><span>简介：</span>高级技术员高级技术员</h4>
 				</view>
 				<view class="expertBtn">研究生</view>
+				</navigator>
 			</view>
 		</view>
+	     <view class="videoList" v-show="act===3">
+			 <video></video>
+		 </view>
 	</view>
 </template>
 
@@ -99,7 +116,26 @@
 			}
 		},
 		methods: {
-			
+		tiao(e){
+			 console.log(e)
+			                // var newsid = e.currentTarget.dataset;    
+			                uni.navigateTo({
+			                    url: '../reserch/reserch_details',
+			                    success: res => {},
+			                    fail: () => {},
+			                    complete: () => {}
+			                });
+			          
+		   }
+		  
+		},
+		info(e){
+			uni.navigateTo({
+			    url: '../reserch/expertInformation',
+			    success: res => {},
+			    fail: () => {},
+			    complete: () => {}
+			});
 		}
 	}
 </script>
@@ -221,5 +257,14 @@
 	margin-top: 63rpx;
 	border-radius: 23rpx;
 	font-size: 22rpx;
+}
+.videoList{
+	width: 703rpx;
+	height: 312rpx;
+	margin: 0 auto;
+}
+video{
+	width: 100%;
+	height: 100%;
 }
 </style>
