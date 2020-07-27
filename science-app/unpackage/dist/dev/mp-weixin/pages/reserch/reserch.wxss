@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+/* pages/reserch/reserch.wxss */
+=======
 
 .header{
 	width: 100%;
@@ -119,3 +122,4 @@
 	font-size: 22rpx;
 }
 
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814

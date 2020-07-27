@@ -144,7 +144,11 @@ function queue(hooks, data) {
   for (var i = 0; i < hooks.length; i++) {
     var hook = hooks[i];
     if (promise) {
+<<<<<<< HEAD
+      promise = Promise.resolve(wrapperHook(hook));
+=======
       promise = Promise.then(wrapperHook(hook));
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
     } else {
       var res = hook(data);
       if (isPromise(res)) {
@@ -456,7 +460,13 @@ function processArgs(methodName, fromArgs) {var argsOption = arguments.length > 
           toArgs[keyOption.name ? keyOption.name : key] = keyOption.value;
         }
       } else if (CALLBACKS.indexOf(key) !== -1) {
+<<<<<<< HEAD
+        if (isFn(fromArgs[key])) {
+          toArgs[key] = processCallback(methodName, fromArgs[key], returnValue);
+        }
+=======
         toArgs[key] = processCallback(methodName, fromArgs[key], returnValue);
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
       } else {
         if (!keepFromArgs) {
           toArgs[key] = fromArgs[key];
@@ -571,10 +581,13 @@ var extraApi = /*#__PURE__*/Object.freeze({
 
 
 var getEmitter = function () {
+<<<<<<< HEAD
+=======
   if (typeof getUniEmitter === 'function') {
     /* eslint-disable no-undef */
     return getUniEmitter;
   }
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
   var Emitter;
   return function getUniEmitter() {
     if (!Emitter) {
@@ -661,6 +674,11 @@ Component = function Component() {var options = arguments.length > 0 && argument
 var PAGE_EVENT_HOOKS = [
 'onPullDownRefresh',
 'onReachBottom',
+<<<<<<< HEAD
+'onAddToFavorites',
+'onShareTimeline',
+=======
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
 'onShareAppMessage',
 'onPageScroll',
 'onResize',
@@ -761,10 +779,14 @@ function initData(vueOptions, context) {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
 <<<<<<< HEAD
+      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+=======
+<<<<<<< HEAD
       if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
 =======
       if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
 >>>>>>> b0aaf7ca1d28b716988fca045f35e80339fc20f1
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -951,7 +973,22 @@ function getExtraValue(vm, dataPathsArray) {
       var propPath = dataPathArray[1];
       var valuePath = dataPathArray[3];
 
+<<<<<<< HEAD
+      var vFor;
+      if (Number.isInteger(dataPath)) {
+        vFor = dataPath;
+      } else if (!dataPath) {
+        vFor = context;
+      } else if (typeof dataPath === 'string' && dataPath) {
+        if (dataPath.indexOf('#s#') === 0) {
+          vFor = dataPath.substr(3);
+        } else {
+          vFor = vm.__get_value(dataPath, context);
+        }
+      }
+=======
       var vFor = dataPath ? vm.__get_value(dataPath, context) : context;
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
 
       if (Number.isInteger(vFor)) {
         context = value;
@@ -1001,6 +1038,15 @@ function processEventExtra(vm, extra, event) {
         } else {
           if (dataPath === '$event') {// $event
             extraObj['$' + index] = event;
+<<<<<<< HEAD
+          } else if (dataPath === 'arguments') {
+            if (event.detail && event.detail.__args__) {
+              extraObj['$' + index] = event.detail.__args__;
+            } else {
+              extraObj['$' + index] = [event];
+            }
+=======
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
           } else if (dataPath.indexOf('$event.') === 0) {// $event.target.value
             extraObj['$' + index] = vm.__get_value(dataPath.replace('$event.', ''), event);
           } else {
@@ -1081,6 +1127,18 @@ function isMatchEventType(eventType, optType) {
 
 }
 
+<<<<<<< HEAD
+function getContextVm(vm) {
+  var $parent = vm.$parent;
+  // 父组件是 scoped slots 或者其他自定义组件时继续查找
+  while ($parent && $parent.$parent && ($parent.$options.generic || $parent.$parent.$options.generic || $parent.$scope._$vuePid)) {
+    $parent = $parent.$parent;
+  }
+  return $parent && $parent.$parent;
+}
+
+=======
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
 function handleEvent(event) {var _this = this;
   event = wrapper$1(event);
 
@@ -1113,12 +1171,17 @@ function handleEvent(event) {var _this = this;
         var methodName = eventArray[0];
         if (methodName) {
           var handlerCtx = _this.$vm;
+<<<<<<< HEAD
+          if (handlerCtx.$options.generic) {// mp-weixin,mp-toutiao 抽象节点模拟 scoped slots
+            handlerCtx = getContextVm(handlerCtx) || handlerCtx;
+=======
           if (
           handlerCtx.$options.generic &&
           handlerCtx.$parent &&
           handlerCtx.$parent.$parent)
           {// mp-weixin,mp-toutiao 抽象节点模拟 scoped slots
             handlerCtx = handlerCtx.$parent.$parent;
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
           }
           if (methodName === '$emit') {
             handlerCtx.$emit.apply(handlerCtx,
@@ -1168,7 +1231,13 @@ var hooks = [
 'onShow',
 'onHide',
 'onError',
+<<<<<<< HEAD
+'onPageNotFound',
+'onThemeChange',
+'onUnhandledRejection'];
+=======
 'onPageNotFound'];
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
 
 
 function parseBaseApp(vm, _ref3)
@@ -1502,7 +1571,11 @@ var uni = {};
 if (typeof Proxy !== 'undefined' && "mp-weixin" !== 'app-plus') {
   uni = new Proxy({}, {
     get: function get(target, name) {
+<<<<<<< HEAD
+      if (hasOwn(target, name)) {
+=======
       if (target[name]) {
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
         return target[name];
       }
       if (baseApi[name]) {
@@ -2277,6 +2350,9 @@ var uid = 0;
  * directives subscribing to it.
  */
 var Dep = function Dep () {
+<<<<<<< HEAD
+  this.id = uid++;
+=======
   // fixed by xxxxxx (nvue vuex)
   /* eslint-disable no-undef */
   if(typeof SharedObject !== 'undefined'){
@@ -2284,6 +2360,7 @@ var Dep = function Dep () {
   } else {
     this.id = uid++;
   }
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
   this.subs = [];
 };
 
@@ -2320,7 +2397,11 @@ Dep.prototype.notify = function notify () {
 // can be evaluated at a time.
 // fixed by xxxxxx (nvue shared vuex)
 /* eslint-disable no-undef */
+<<<<<<< HEAD
+Dep.SharedObject = {};
+=======
 Dep.SharedObject = typeof SharedObject !== 'undefined' ? SharedObject : {};
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
 Dep.SharedObject.target = null;
 Dep.SharedObject.targetStack = [];
 
@@ -3814,6 +3895,8 @@ function updateListeners (
 /*  */
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 // fixed by xxxxxx (mp properties)
 function extractPropertiesFromVNodeData(data, Ctor, res, context) {
   var propOptions = Ctor.options.mpOptions && Ctor.options.mpOptions.properties;
@@ -3826,6 +3909,7 @@ function extractPropertiesFromVNodeData(data, Ctor, res, context) {
   if (isDef(attrs) || isDef(props)) {
     for (var key in propOptions) {
 =======
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
 // fixed by xxxxxx (mp properties)
 function extractPropertiesFromVNodeData(data, Ctor, res, context) {
   var propOptions = Ctor.options.mpOptions && Ctor.options.mpOptions.properties;
@@ -3837,7 +3921,10 @@ function extractPropertiesFromVNodeData(data, Ctor, res, context) {
   var props = data.props;
   if (isDef(attrs) || isDef(props)) {
     for (var key in propOptions) {
+<<<<<<< HEAD
+=======
 >>>>>>> b0aaf7ca1d28b716988fca045f35e80339fc20f1
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
       var altKey = hyphenate(key);
       var result = checkProp(res, props, key, altKey, true) ||
           checkProp(res, attrs, key, altKey, false);
@@ -3851,16 +3938,22 @@ function extractPropertiesFromVNodeData(data, Ctor, res, context) {
         // 赋值 externalClass 真正的值(模板里 externalClass 的值可能是字符串)
         res[key] = context[camelize(res[key])];
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
       }
     }
   }
   return res
+<<<<<<< HEAD
+=======
 =======
       }
     }
   }
   return res
 >>>>>>> b0aaf7ca1d28b716988fca045f35e80339fc20f1
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
 }
 
 function extractPropsFromVNodeData (
@@ -7118,6 +7211,8 @@ function type(obj) {
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 /*  */
 
 function flushCallbacks$1(vm) {
@@ -7152,6 +7247,7 @@ function nextTick$1(vm, cb) {
     }else{
         if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
 =======
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
 /*  */
 
 function flushCallbacks$1(vm) {
@@ -7185,12 +7281,18 @@ function nextTick$1(vm, cb) {
         return nextTick(cb, vm)
     }else{
         if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+<<<<<<< HEAD
+=======
 >>>>>>> b0aaf7ca1d28b716988fca045f35e80339fc20f1
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
         }
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
     }
     var _resolve;
     if (!vm.__next_tick_callbacks) {
@@ -7228,6 +7330,17 @@ function cloneWithData(vm) {
     ret[key] = vm[key];
     return ret
   }, ret);
+<<<<<<< HEAD
+
+  // vue-composition-api
+  var rawBindings = vm.__secret_vfa_state__ && vm.__secret_vfa_state__.rawBindings;
+  if (rawBindings) {
+    Object.keys(rawBindings).forEach(function (key) {
+      ret[key] = vm[key];
+    });
+  }
+  
+=======
   //TODO 需要把无用数据处理掉，比如 list=>l0 则 list 需要移除，否则多传输一份数据
   Object.assign(ret, vm.$mp.data || {});
   if (
@@ -7314,6 +7427,7 @@ function cloneWithData(vm) {
     ret[key] = vm[key];
     return ret
   }, ret);
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
   //TODO 需要把无用数据处理掉，比如 list=>l0 则 list 需要移除，否则多传输一份数据
   Object.assign(ret, vm.$mp.data || {});
   if (
@@ -7362,7 +7476,10 @@ var patch = function(oldVnode, vnode) {
       flushCallbacks$1(this);
     }
   }
+<<<<<<< HEAD
+=======
 >>>>>>> b0aaf7ca1d28b716988fca045f35e80339fc20f1
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
 };
 
 /*  */
@@ -7504,6 +7621,8 @@ function normalizeStyleBinding (bindingStyle) {
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 /*  */
 
 var MP_METHODS = ['createSelectorQuery', 'createIntersectionObserver', 'selectAllComponents', 'selectComponent'];
@@ -7736,6 +7855,7 @@ Vue.prototype.$mount = function(
 
 lifecycleMixin$1(Vue);
 =======
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
 /*  */
 
 var MP_METHODS = ['createSelectorQuery', 'createIntersectionObserver', 'selectAllComponents', 'selectComponent'];
@@ -7752,7 +7872,11 @@ function getTarget(obj, path) {
   return getTarget(obj[key], parts.slice(1).join('.'))
 }
 
+<<<<<<< HEAD
+function internalMixin(Vue) {
+=======
 function internalMixin(Vue ) {
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
 
   Vue.config.errorHandler = function(err, vm, info) {
     Vue.util.warn(("Error in " + info + ": \"" + (err.toString()) + "\""), vm);
@@ -7900,7 +8024,14 @@ var LIFECYCLE_HOOKS$1 = [
     'onShow',
     'onHide',
     'onUniNViewMessage',
+<<<<<<< HEAD
+    'onPageNotFound',
+    'onThemeChange',
     'onError',
+    'onUnhandledRejection',
+=======
+    'onError',
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
     //Page
     'onLoad',
     // 'onShow',
@@ -7910,6 +8041,11 @@ var LIFECYCLE_HOOKS$1 = [
     'onPullDownRefresh',
     'onReachBottom',
     'onTabItemTap',
+<<<<<<< HEAD
+    'onAddToFavorites',
+    'onShareTimeline',
+=======
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
     'onShareAppMessage',
     'onResize',
     'onPageScroll',
@@ -7967,7 +8103,10 @@ Vue.prototype.$mount = function(
 };
 
 lifecycleMixin$1(Vue);
+<<<<<<< HEAD
+=======
 >>>>>>> b0aaf7ca1d28b716988fca045f35e80339fc20f1
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
 internalMixin(Vue);
 
 /*  */
@@ -8009,6 +8148,11 @@ module.exports = g;
 /***/ }),
 /* 4 */
 <<<<<<< HEAD
+/*!****************************************************************!*\
+  !*** C:/Users/陈强/Desktop/新建文件夹/science/science-app/pages.json ***!
+  \****************************************************************/
+=======
+<<<<<<< HEAD
 /*!*********************************************************************!*\
   !*** C:/Users/Administrator/Desktop/science/science-app/pages.json ***!
   \*********************************************************************/
@@ -8017,6 +8161,7 @@ module.exports = g;
   !*** /Users/zhucheng/Desktop/science-app/pages.json ***!
   \******************************************************/
 >>>>>>> b0aaf7ca1d28b716988fca045f35e80339fc20f1
+>>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
 /*! no static exports found */
 /***/ (function(module, exports) {
 
