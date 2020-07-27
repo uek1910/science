@@ -1,21 +1,14 @@
 {
   "pages": [
     "pages/policy/policy",
-<<<<<<< HEAD
-=======
     "pages/policy/support",
->>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
     "pages/reserch/reserch",
     "pages/activity/activity",
     "pages/login/login",
     "pages/compony/compony",
     "pages/compony/info",
-<<<<<<< HEAD
-    "pages/compony/result"
-=======
     "pages/compony/result",
     "pages/reserch/reserch_details"
->>>>>>> ed53b0c9a4c478117074b58858208f63a94c8814
   ],
   "subPackages": [],
   "window": {
