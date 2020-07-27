@@ -42,6 +42,30 @@
             "path" : "pages/reserch/reserch_details",
             "style" : {}
         }
+        ,{
+            "path" : "pages/tabs/tabs",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/policy/policy_detail",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/compony/needs_list",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/compony/needs_detail",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/compony/apply_result",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/compony/apply_detail",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
