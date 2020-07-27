@@ -7,49 +7,45 @@
 		</view>
 		<view class="policy_content">
 			<view class="content">
-				<image class="content_img" src="../../static/logo.png"></image>
+				<image class="content_img" src="../../static/policy1.png"></image>
 				<view class="con">
 					<p>山西省科学技术厅关于印发《山西省省级<br>财政科技计划（专项,基金等）项目管理专<br>业机构管理暂行规定》的通知</p>
 				</view>
 			</view>
 			<view class="content">
-				<image class="content_img" src="../../static/logo.png"></image>
+				<image class="content_img" src="../../static/policy2.png"></image>
 				<view class="con">
 					<p>山西省科学技术厅关于印发《山西省省级<br>财政科技计划（专项,基金等）项目管理专<br>业机构管理暂行规定》的通知</p>
 				</view>
 			</view>
 			<view class="content">
-				<image class="content_img" src="../../static/logo.png"></image>
+				<image class="content_img" src="../../static/policy3.png"></image>
 				<view class="con">
 					<p>山西省科学技术厅关于印发《山西省省级<br>财政科技计划（专项,基金等）项目管理专<br>业机构管理暂行规定》的通知</p>
 				</view>
 			</view>
 			<view class="content">
-				<image class="content_img" src="../../static/logo.png"></image>
+				<image class="content_img" src="../../static/policy4.png"></image>
 				<view class="con">
 					<p>山西省科学技术厅关于印发《山西省省级<br>财政科技计划（专项,基金等）项目管理专<br>业机构管理暂行规定》的通知</p>
 				</view>
 			</view>
 			<view class="content">
-				<image class="content_img" src="../../static/logo.png"></image>
+				<image class="content_img" src="../../static/policy1.png"></image>
 				<view class="con">
 					<p>山西省科学技术厅关于印发《山西省省级<br>财政科技计划（专项,基金等）项目管理专<br>业机构管理暂行规定》的通知</p>
 				</view>
 			</view>
 		</view>
-		
-		
 	</view>
 </template>
 <script>
 	export default {
 		data() {
 			return {
-				
 			}
 		},
 		methods: {
-			
 		}
 	}
 </script>
@@ -65,9 +61,6 @@ body{
 	margin: 0 auto;
 }
 .policy_nav{
-	/* width: 703rpx;
-	height: 177rpx; */
-	/* padding:  0 24rpx; */
 	margin: 0 auto;
 	font-size: #fff;
 	background: #fcfcfc;
@@ -96,7 +89,7 @@ body{
 	background: #fff;
 	margin-bottom: 26rpx;
 	float: left;
-	box-shadow: 0rpx 0rpx 10rpx #000;
+	box-shadow: 0rpx 1rpx 16rpx 0rpx rgba(229, 229, 229, 0.75);
 }
 .content_img{
 	width:193rpx;

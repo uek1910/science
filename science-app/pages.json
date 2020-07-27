@@ -34,6 +34,10 @@
             "path" : "pages/compony/result",
             "style" : {}
         }
+		,{
+		    "path" : "pages/policy/guidance",
+		    "style" : {}
+		}
         ,{
             "path" : "pages/reserch/reserch_details",
             "style" : {}
