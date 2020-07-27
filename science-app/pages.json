@@ -8,7 +8,9 @@
 		}
 	    ,{
             "path" : "pages/reserch/reserch",
-            "style" : {}
+            "style" : {
+				"navigationBarTitleText": "科研"
+			}
         }
         ,{
             "path" : "pages/activity/activity",
