@@ -33,11 +33,19 @@
         ,{
             "path" : "pages/compony/result",
             "style" : {}
+<<<<<<< HEAD
         }
 		,{
 		    "path" : "pages/policy/guidance",
 		    "style" : {}
 		}
+=======
+        }
+        ,{
+            "path" : "pages/reserch/reserch_details",
+            "style" : {}
+        }
+>>>>>>> 6fc31a80a092a55d6fd4bff97beb70b19cb0f465
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
