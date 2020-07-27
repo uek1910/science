@@ -1,10 +1,13 @@
 <template>
 	<view class="policy_body">
+		<!-- 导航开始 -->
 		<view class="policy_nav">
 			<view class="nav_title active">政策法规</view>
 			<view class="nav_title">持续类型</view>
 			<view class="nav_title">心理指导</view>
 		</view>
+		<!-- 导航结束-->
+		<!-- 列表开始 -->
 		<view class="policy_content">
 			<view class="content">
 				<image class="content_img" src="../../static/policy1.png"></image>
@@ -37,6 +40,7 @@
 				</view>
 			</view>
 		</view>
+		<!-- 列表结束 -->
 	</view>
 </template>
 <script>
@@ -53,6 +57,7 @@
 body{
 	background: #fcfcfc;
 }
+/* 导航开始 */
 .policy_body{
 	background: #fcfcfc;
 	width: 703rpx;
@@ -77,6 +82,8 @@ body{
 	background: #ffab3e;
 	color: #2c304c;
 }
+/* 导航结束 */
+/* 列表结束 */
 .policy_content{
 	width: 703rpx;
 	height: 1020rpx;
@@ -107,10 +114,5 @@ body{
 	font-size: 22rpx;
 	color: #7f7f7f;
 }
-
-
-
-
-
-
+/* 列表结束 */
 </style>
