@@ -7,10 +7,16 @@
 		</view>
 		<view class="policy_content">
 			<view class="content">
+				<h1>高薪企业认证</h1>
 				<image class="content_img" src="../../static/logo.png"></image>
-				<view class="con">
-					<p>山西省科学技术厅关于印发《山西省省级<br>财政科技计划（专项,基金等）项目管理专<br>业机构管理暂行规定》的通知</p>
-				</view>
+			</view>
+			<view class="content">
+				<h1>研发补助</h1>
+				<image class="content_img" src="../../static/logo.png"></image>
+			</view>
+			<view class="content">
+				<h1>研发加计</h1>
+				<image class="content_img" src="../../static/logo.png"></image>
 			</view>
 			
 			
@@ -43,9 +49,6 @@ body{
 	margin: 0 auto;
 }
 .policy_nav{
-	/* width: 703rpx;
-	height: 177rpx; */
-	/* padding:  0 24rpx; */
 	margin: 0 auto;
 	font-size: #fff;
 	background: #fcfcfc;
@@ -74,13 +77,20 @@ body{
 	background: #fff;
 	margin-bottom: 26rpx;
 	float: left;
-	box-shadow: 0rpx 0rpx 10rpx #000;
+	box-shadow: 0rpx 1rpx 16rpx 0rpx rgba(229, 229, 229, 0.75);
+}
+.content h1{
+	display: block;
+	float: left;
+	padding-top:80rpx;
+	padding-left: 53rpx;
+	font-size: 32rpx;
 }
 .content_img{
 	width:193rpx;
 	height:126rpx;
-	float: left;
-	margin: 26rpx 9rpx;
+	float: right;
+	margin: 26rpx 60rpx;
 }
 .con{
 	width: 487rpx;
