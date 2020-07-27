@@ -1,12 +1,36 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/policy/policy",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "政策"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/reserch/reserch",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/activity/activity",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/compony/compony",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/compony/info",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/compony/result",
+            "style" : {}
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
