@@ -186,7 +186,12 @@
 		float: right;
 		margin: 26rpx 0rpx;
 		font-size: 22rpx;
-		color: #2C405A;
+		/* color: #2C405A; */
+	}
+	.con p{
+		color: #7f7f7f;
+		margin-left: 32rpx;
+		text-align: left;
 	}
 	.policy_content2 {
 		width: 703rpx;
