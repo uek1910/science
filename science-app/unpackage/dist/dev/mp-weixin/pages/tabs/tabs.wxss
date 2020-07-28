@@ -1,0 +1,44 @@
+
+.tabs {
+	width: 700rpx;
+	height: 500rpx;
+	margin: 0 auto;
+	border: 1rpx solid red;
+}
+.top {
+	width: 700rpx;
+	height: 100rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.item {
+	width: 200rpx;
+	height: 100rpx;
+	text-align: center;
+}
+.active {
+	color: red;
+}
+.bottom {
+	width: 700rpx;
+	height: 400rpx;
+	position: relative;
+}
+.content {
+	width: 700rpx;
+	height: 400rpx;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #fff;
+	text-align: center;
+	line-height: 400rpx;
+}
+.activeContent{
+	z-index:1;
+}
+

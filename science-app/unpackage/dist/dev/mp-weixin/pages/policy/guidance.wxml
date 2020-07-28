@@ -1,0 +1,1 @@
+<view class="policy_body"><view class="policy_nav"><view class="nav_title active">政策法规</view><view class="nav_title">持续类型</view><view class="nav_title">心理指导</view></view><view class="policy_guidance"><image class="guidance_img" src="../../static/policy6.png"></image></view><button class="advisory" type="primary">技术咨询</button></view>
