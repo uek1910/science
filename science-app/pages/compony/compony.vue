@@ -25,24 +25,29 @@
 			</view>
 			<!-- 知识产权 -->
 			<view :class="['way',{'activeWay':index==1}]">
-				<view class="plan">
-					<view class="left">
-						<view class="line"></view>
-						<view>查看申请结果</view>
+				<navigator url="apply_result">
+					<view class="plan">
+						<view class="left">
+							<view class="line"></view>
+							<view>查看申请结果</view>
+						</view>
+						<view class="right">
+							<image src="@/static/compony/fanhui-2.png" mode=""></image>
+						</view>
 					</view>
-					<view class="right">
-						<image src="@/static/compony/fanhui-2.png" mode=""></image>
+				</navigator>
+				<navigator url="apply_detail">
+					<view class="plan">
+						<view class="left">
+							<view class="line"></view>
+							<view>申请评估结果</view>
+						</view>
+						<view class="right">
+							<image src="@/static/compony/fanhui-2.png" mode=""></image>
+						</view>
 					</view>
-				</view>
-				<view class="plan">
-					<view class="left">
-						<view class="line"></view>
-						<view>申请评估结果</view>
-					</view>
-					<view class="right">
-						<image src="@/static/compony/fanhui-2.png" mode=""></image>
-					</view>
-				</view>
+				</navigator>
+				
 			</view>
 			<!-- 设计方案 -->
 			<view :class="['way',{'activeWay':index==2}]">
