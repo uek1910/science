@@ -21,7 +21,9 @@
 					<view class="name">山西省科学技术厅</view>
 					<view class="date">2018-10-24</view>
 				</view>
-				<view class="btn">查看更多</view>
+				<navigator url="info">
+					<view class="btn">查看更多</view>
+				</navigator>
 			</view>
 			<!-- 知识产权 -->
 			<view :class="['way',{'activeWay':index==1}]">
